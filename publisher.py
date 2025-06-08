@@ -41,6 +41,5 @@ class RabbitMQPublisher:
 
 rabbit_mq_publisher = RabbitMQPublisher()
 rabbit_mq_publisher.send_message({
-    "message": "Hello World"
+    "message": "Teste no rabbitmq"
 })
-
