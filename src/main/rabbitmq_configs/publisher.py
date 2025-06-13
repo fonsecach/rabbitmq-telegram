@@ -69,13 +69,11 @@ class RabbitMQPublisher:
             self.__channel.connection.close()
 
 
-
 if __name__ == "__main__":
     publisher = RabbitMQPublisher()
     try:
         publisher.send_message({
-            "message": "Teste no rabbitmq",
-            "timestamp": "2024-01-01T10:00:00"
+            "msg": "Projeto finalizado com sucesso!",
         })
     finally:
         publisher.close_connection()

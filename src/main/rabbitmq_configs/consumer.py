@@ -2,14 +2,10 @@ import pika
 import json
 from dotenv import load_dotenv
 import os
+from .callback import rabbitmq_callback
 
 load_dotenv()
 
-def rabbitmq_callback(ch, method, properties, body):
-    msg = body.decode("utf-8")
-    formatted_msg = json.loads(msg)
-    print(f" [x] Received {formatted_msg}")
-    # Process the message here  
 
 class RabbitMQConsumer:
     def __init__(self) -> None:
