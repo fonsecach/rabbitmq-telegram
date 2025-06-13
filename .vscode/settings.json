@@ -1,7 +1,14 @@
 {
     "files.exclude": {
-        "**/*.pyc": {"when": "$(basename).py"},
-        "**/__pycache__": true,
-
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/*.pyd": true,
+      "**/*.pyo": true
+    },
+    "search.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/*.pyd": true,
+      "**/*.pyo": true
     }
-}
+  }
